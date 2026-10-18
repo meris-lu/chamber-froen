@@ -113,7 +113,7 @@ except Exception as e:
 # --- Sitzungstermine der Kommissionen (chd.lu Kalender .ics) ---
 # Weitere Kommissionen: Nummer aus dem Link "Réunions .ics" (…/icscalendar/NUMMER) hier eintragen.
 # Kommissionsseiten auf chd.lu (Nummer aus …/en/commission/NUMMER). Der Job holt Name und Kalender selbst.
-KOM_SEITEN = [754, 745, 751, 742, 765, 750]
+KOM_SEITEN = [755, 754, 745, 751, 742, 765, 750]
 ICS_IDS = [755]
 UA = {"User-Agent": "Mozilla/5.0 (meris-sehovic.eu Webseit)"}
 import re, html as _html
