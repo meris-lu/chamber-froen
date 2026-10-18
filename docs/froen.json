@@ -1276,5 +1276,15 @@
    "aentwert": "2023-11-23",
    "minister": "Xavier Bettel, Premier Ministre"
   }
+ ],
+ "kommissiounen": [],
+ "sitzungen": [
+  {
+   "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
+   "titel": "- Commission de l'Environnement, du Climat et de la Biodiversité",
+   "start": "20261021T113000",
+   "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/755"
+  }
  ]
 }
