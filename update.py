@@ -76,7 +76,7 @@ try:
     heute = datetime.date.today().isoformat()
     kom = []
     for r in csv.DictReader(io.StringIO(tk), dialect=dk):
-        if NAME not in norm(r.get("name", "")):
+        if NAME not in norm(" ".join(str(v) for v in r.values())):
             continue
         ende = clean(r.get("end_date")) or clean(r.get("institution_end_date"))
         if ende and ende[:10] < heute:
@@ -96,6 +96,9 @@ try:
     data["kommissiounen"] = uniq
     json.dump(data, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
     print(len(uniq), "Kommissionen gefunden")
+    if not uniq:
+        print("Spalten:", dk and tk.splitlines()[0][:300])
+        print("Treffer im Rohtext:", [z[:200] for z in tk.splitlines() if "hovi" in z.lower()][:3])
 except Exception as e:
     print("Kommissionen nicht geladen:", e)
 
