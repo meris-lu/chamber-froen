@@ -1424,5 +1424,307 @@
    "uert": "Salle plénière à l'Hôtel de la Chambre",
    "link": "https://www.chd.lu/en/commission/742"
   }
+ ],
+ "abstimmungen": [
+  {
+   "datum": "2026-07-15",
+   "titel": "MO1 - PL8727",
+   "typ": "Voté",
+   "votum": "Non",
+   "jo": 2,
+   "nee": 53,
+   "enth": 2,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8727 - Services publics autobus",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 51,
+   "nee": 2,
+   "enth": 4,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8689 - Transports intelligents",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 55,
+   "nee": 0,
+   "enth": 2,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8688 - Extension ligne tramway",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8675 - Zones non aedificandi",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 55,
+   "nee": 0,
+   "enth": 5,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8751 - Ressources de l'AID-21",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8671 - Direction contrôle financier",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8595 - Pompes à chaleur",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "MO 1 - PL8585",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 58,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8585 - Klimabonus Wunnen",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8535 - Logements abordables",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 51,
+   "nee": 5,
+   "enth": 4,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8535 - Logements abordables - Vote séparé (article 44)",
+   "typ": "Voté",
+   "votum": "Non",
+   "jo": 40,
+   "nee": 20,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-15",
+   "titel": "PL 8534 - Fonds du Logement",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 59,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "MO 3 - PL8714",
+   "typ": "Voté",
+   "votum": "Abstention",
+   "jo": 21,
+   "nee": 35,
+   "enth": 4,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "MO 2 - PL8714",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 25,
+   "nee": 35,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8714 - Profession infirmier",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Abstention",
+   "jo": 49,
+   "nee": 5,
+   "enth": 6,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8729 - Space Campus",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 58,
+   "nee": 0,
+   "enth": 2,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "MO 1 - PL8707",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 20,
+   "nee": 40,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8707 - Mécanisme compensation",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "MO 1 - PL8475",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 25,
+   "nee": 35,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8475 - Régime aides entreprises",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 118,
+   "nee": 55,
+   "enth": 7,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8475 - Régime aides entreprises",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 118,
+   "nee": 55,
+   "enth": 7,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-14",
+   "titel": "PL 8475 - Régime aides entreprises",
+   "typ": "Voté",
+   "votum": "Non",
+   "jo": 118,
+   "nee": 55,
+   "enth": 7,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-09",
+   "titel": "MO 1 - Stratégie talents",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 55,
+   "nee": 0,
+   "enth": 5,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "PL 8582 - Recrutement fonctionnaires",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 55,
+   "nee": 5,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "PL 8569 - Examens-concours",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 60,
+   "nee": 0,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "PL 8193 - Honorabilité membres Police",
+   "typ": "Premier vote constitutionnel",
+   "votum": "Oui",
+   "jo": 54,
+   "nee": 0,
+   "enth": 5,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "MO 4 - PL 8426",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 20,
+   "nee": 40,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "MO 3 - PL 8426",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 20,
+   "nee": 40,
+   "enth": 0,
+   "firwat": ""
+  },
+  {
+   "datum": "2026-07-08",
+   "titel": "MO 2 - PL 8426",
+   "typ": "Voté",
+   "votum": "Oui",
+   "jo": 20,
+   "nee": 40,
+   "enth": 0,
+   "firwat": ""
+  }
  ]
 }
