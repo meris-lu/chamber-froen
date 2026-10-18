@@ -96,9 +96,9 @@ try:
     data["kommissiounen"] = uniq
     json.dump(data, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
     print(len(uniq), "Kommissionen gefunden")
-    if not uniq:
+    if len(uniq) < 3:
         print("Spalten:", dk and tk.splitlines()[0][:300])
-        print("Treffer im Rohtext:", [z[:200] for z in tk.splitlines() if "hovi" in z.lower()][:3])
+        print("Treffer im Rohtext:", [z[:250] for z in tk.splitlines() if "hovi" in z.lower()][:12])
 except Exception as e:
     print("Kommissionen nicht geladen:", e)
 
@@ -107,7 +107,7 @@ except Exception as e:
 ICS_IDS = [755]
 try:
     import datetime
-    jetzt = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M")
+    jetzt = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M")
     sitz = []
     for nr in ICS_IDS:
         try:
