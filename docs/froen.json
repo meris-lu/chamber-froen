@@ -1277,7 +1277,14 @@
    "minister": "Xavier Bettel, Premier Ministre"
   }
  ],
- "kommissiounen": [],
+ "kommissiounen": [
+  {
+   "typ": "",
+   "name": "",
+   "roll": "",
+   "zenter": ""
+  }
+ ],
  "sitzungen": [
   {
    "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
