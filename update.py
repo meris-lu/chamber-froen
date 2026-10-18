@@ -112,7 +112,25 @@ except Exception as e:
 
 # --- Sitzungstermine der Kommissionen (chd.lu Kalender .ics) ---
 # Weitere Kommissionen: Nummer aus dem Link "Réunions .ics" (…/icscalendar/NUMMER) hier eintragen.
+# Kommissionsseiten auf chd.lu (Nummer aus …/en/commission/NUMMER). Der Job holt Name und Kalender selbst.
+KOM_SEITEN = [754, 745, 751, 742, 765, 750]
 ICS_IDS = [755]
+UA = {"User-Agent": "Mozilla/5.0 (meris-sehovic.eu Webseit)"}
+import re, html as _html
+NAMEN = {}
+for sid in KOM_SEITEN:
+    try:
+        seite = urllib.request.urlopen(urllib.request.Request("https://www.chd.lu/en/commission/%d" % sid, headers=UA), timeout=60).read().decode("utf-8", "replace")
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", seite, re.S) or re.search(r"<title>(.*?)</title>", seite, re.S)
+        name = _html.unescape(re.sub(r"<[^>]+>", "", m.group(1))).split("|")[0].strip() if m else ""
+        for ics in re.findall(r"icscalendar/(\d+)", seite):
+            ics = int(ics)
+            if ics not in ICS_IDS:
+                ICS_IDS.append(ics)
+            NAMEN[ics] = (name, "https://www.chd.lu/en/commission/%d" % sid)
+        print("Kommissionsseite", sid, ":", name or "ohne Namen", "→ Kalender", re.findall(r"icscalendar/(\d+)", seite)[:1])
+    except Exception as e:
+        print("Kommissionsseite", sid, "nicht geladen:", e)
 try:
     import datetime
     jetzt = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M")
@@ -120,7 +138,7 @@ try:
     for nr in ICS_IDS:
         try:
             req = urllib.request.Request("https://www.chd.lu/en/icscalendar/%d" % nr,
-                                         headers={"User-Agent": "Mozilla/5.0 (meris-sehovic.eu Webseit)"})
+                                         headers=UA)
             ics = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
         except Exception as e:
             print("Kalender", nr, "nicht geladen:", e)
@@ -140,11 +158,11 @@ try:
             if start[:8] < jetzt[:8]:
                 continue
             sitz.append({
-                "kommissioun": kal or ev.get("SUMMARY", ""),
+                "kommissioun": NAMEN.get(nr, ("",))[0] or kal or ev.get("SUMMARY", ""),
                 "titel": ev.get("SUMMARY", ""),
                 "start": start,
                 "uert": ev.get("LOCATION", ""),
-                "link": ev.get("URL", "https://www.chd.lu/en/commission/%d" % nr),
+                "link": ev.get("URL") or NAMEN.get(nr, ("", "https://www.chd.lu/en/direct"))[1],
             })
     sitz.sort(key=lambda s: s["start"])
     data = json.load(open("docs/froen.json"))
