@@ -1369,11 +1369,60 @@
  ],
  "sitzungen": [
   {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261019T083000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Bureau - Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261019T110000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Pétitions",
+   "titel": "- Commission des Pétitions - Commission de la Culture",
+   "start": "20261021T090000",
+   "uert": "Salle plénière à l'Hôtel de la Chambre",
+   "link": "https://www.chd.lu/en/commission/765"
+  },
+  {
    "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
    "titel": "- Commission de l'Environnement, du Climat et de la Biodiversité",
    "start": "20261021T113000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/755"
+   "link": "https://www.chd.lu/en/direct"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Bureau",
+   "start": "20261022T080000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Pétitions",
+   "titel": "- Commission des Pétitions",
+   "start": "20261022T083000",
+   "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/765"
+  },
+  {
+   "kommissioun": "Commission de la Mobilité et des Travaux publics",
+   "titel": "- Commission de la Mobilité et des Travaux publics",
+   "start": "20261022T101500",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/751"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Commission \"Toutes les Commissions Parlementaires\"",
+   "start": "20261022T143000",
+   "uert": "Salle plénière à l'Hôtel de la Chambre",
+   "link": "https://www.chd.lu/en/commission/742"
   }
  ]
 }
