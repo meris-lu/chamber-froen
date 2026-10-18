@@ -172,9 +172,11 @@ try:
 except Exception as e:
     print("Sitzungen nicht geladen:", e)
 
-# --- Test: Abstimmungen im Plenum (nur Protokoll, noch nichts auf der Webseite) ---
+# --- Abstimmungen im Plenum laden (immer die neueste CSV des Datensatzes) ---
 try:
-    rv = urllib.request.urlopen("https://download.data.public.lu/resources/liste-des-votes-en-seances-plenieres/20261018-033013/109-votes.csv", timeout=180).read()
+    meta = json.loads(urllib.request.urlopen("https://data.public.lu/api/1/datasets/liste-des-votes-en-seances-plenieres/", timeout=60).read())
+    csv_url = next(r["url"] for r in sorted(meta["resources"], key=lambda r: r.get("last_modified", ""), reverse=True) if (r.get("format") or "").lower() == "csv")
+    rv = urllib.request.urlopen(csv_url, timeout=180).read()
     try:
         tv = rv.decode("utf-8-sig")
     except UnicodeDecodeError:
