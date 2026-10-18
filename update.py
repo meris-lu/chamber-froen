@@ -78,18 +78,26 @@ try:
     for r in csv.DictReader(io.StringIO(tk), dialect=dk):
         if NAME not in norm(" ".join(str(v) for v in r.values())):
             continue
-        ende = clean(r.get("end_date")) or clean(r.get("institution_end_date"))
+        g = lambda *ks: next((clean(r.get(k)) for k in ks if clean(r.get(k))), "")
+        ende = g("rol_date_fin", "end_date")
         if ende and ende[:10] < heute:
             continue
+        if g("grp_date_fin", "institution_end_date") and g("grp_date_fin", "institution_end_date")[:10] < heute:
+            continue
+        name = g("grp_titre", "institution")
+        if "Toutes les Commissions" in name:
+            continue
         kom.append({
-            "typ": clean(r.get("institution_type")),
-            "name": clean(r.get("institution")),
-            "roll": clean(r.get("role")),
-            "zenter": clean(r.get("start_date")),
+            "id": g("grp_id"),
+            "typ": g("grp_type_nom", "institution_type"),
+            "name": name,
+            "volet": g("rol_volet", "role_section"),
+            "roll": g("rol_intitule", "role"),
+            "zenter": g("rol_date_debut", "start_date"),
         })
     seen = set(); uniq = []
     for k in kom:
-        key = (k["name"], k["roll"])
+        key = (k["name"], k["roll"], k["volet"])
         if key not in seen:
             seen.add(key); uniq.append(k)
     data = json.load(open("docs/froen.json"))
