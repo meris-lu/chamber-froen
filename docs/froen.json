@@ -1279,10 +1279,92 @@
  ],
  "kommissiounen": [
   {
-   "typ": "",
-   "name": "",
-   "roll": "",
-   "zenter": ""
+   "id": "1",
+   "typ": "Organe",
+   "name": "Bureau",
+   "volet": "",
+   "roll": "Membre suppléant permanent du Bureau",
+   "zenter": "2023-11-21"
+  },
+  {
+   "id": "494",
+   "typ": "Délégation internationale",
+   "name": "Délégation luxembourgeoise du groupe de contrôle parlementaire conjoint d'Europol (Europol \"JPSG\"\" - joint parliamentary scrutiny group)\"",
+   "volet": "",
+   "roll": "Membre effectif",
+   "zenter": "2023-11-21"
+  },
+  {
+   "id": "142",
+   "typ": "Commission permanente",
+   "name": "Commission de la Mobilité et des Travaux publics",
+   "volet": "",
+   "roll": "Membre",
+   "zenter": "2023-11-21"
+  },
+  {
+   "id": "144",
+   "typ": "Commission permanente",
+   "name": "Commission de l'Éducation nationale, de l'Enfance et de la Jeunesse",
+   "volet": "pour le volet Enseignement fondamental",
+   "roll": "Membre",
+   "zenter": "2024-07-11"
+  },
+  {
+   "id": "178",
+   "typ": "Commission permanente",
+   "name": "Commission de l'Environnement, du Climat et de la Biodiversité",
+   "volet": "pour le volet Climat",
+   "roll": "Membre",
+   "zenter": "2026-07-08"
+  },
+  {
+   "id": "60",
+   "typ": "Commission permanente",
+   "name": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "volet": "pour le volet Affaires européennes",
+   "roll": "Membre",
+   "zenter": "2024-03-14"
+  },
+  {
+   "id": "62",
+   "typ": "Commission permanente",
+   "name": "Commission des Affaires intérieures",
+   "volet": "",
+   "roll": "Membre",
+   "zenter": "2023-11-21"
+  },
+  {
+   "id": "141",
+   "typ": "Commission permanente",
+   "name": "Commission du Logement et de l'Aménagement du territoire",
+   "volet": "",
+   "roll": "Membre",
+   "zenter": "2024-07-11"
+  },
+  {
+   "id": "198",
+   "typ": "Commission réglementaire",
+   "name": "Commission des Pétitions",
+   "volet": "",
+   "roll": "Membre",
+   "zenter": "2023-11-21"
+  },
+  {
+   "id": "200",
+   "typ": "Délégation internationale",
+   "name": "Délégation luxembourgeoise auprès de l'European Interparliamentary Space Conference (EISC)",
+   "volet": "",
+   "roll": "Membre suppléant",
+   "zenter": "2025-12-02"
+  },
+  {
+   "id": "203",
+   "typ": "Commission permanente",
+   "name": "Sous-Commi",
+   "volet": "",
+   "roll": "Membre",
+   "zenter": "2024-02-26"
   }
  ],
  "sitzungen": [
