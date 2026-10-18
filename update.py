@@ -28,6 +28,7 @@ c_title = col("question_title") or col("titre") or col("title")
 c_num = col("question_number") or col("numero")
 c_type = col("question_type") or col("type")
 c_date = col("question_chd_entry_date") or col("date", "depot") or col("date")
+c_rec = col("question_recipients") or col("destinataire")
 c_resp = col("response_deposit_date") or col("date", "reponse")
 
 def clean(v):
@@ -46,6 +47,7 @@ for r in rows:
         "typ": clean(r.get(c_type)),
         "datum": clean(r.get(c_date)),
         "aentwert": clean(r.get(c_resp)) if c_resp else "",
+        "minister": clean(r.get(c_rec)) if c_rec else "",
     })
 
 def key(q):
