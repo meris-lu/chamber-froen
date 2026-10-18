@@ -62,3 +62,83 @@ os.makedirs("docs", exist_ok=True)
 stats = {"total": len(out), "beaentwert": sum(1 for q in out if q["aentwert"])}
 json.dump({"spalten": list(cols), "stats": stats, "froen": out}, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
 print(len(out), "Fragen gefunden")
+
+# --- Kommissionen & Delegationen (data.public.lu, täglich) ---
+URL_KOM = "https://data.public.lu/en/datasets/r/37638e0a-a211-401b-89df-2cc5fc627632"
+try:
+    rawk = urllib.request.urlopen(URL_KOM, timeout=120).read()
+    try:
+        tk = rawk.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        tk = rawk.decode("cp1252")
+    dk = csv.Sniffer().sniff(tk[:5000], delimiters=",;\t")
+    import datetime
+    heute = datetime.date.today().isoformat()
+    kom = []
+    for r in csv.DictReader(io.StringIO(tk), dialect=dk):
+        if NAME not in norm(r.get("name", "")):
+            continue
+        ende = clean(r.get("end_date")) or clean(r.get("institution_end_date"))
+        if ende and ende[:10] < heute:
+            continue
+        kom.append({
+            "typ": clean(r.get("institution_type")),
+            "name": clean(r.get("institution")),
+            "roll": clean(r.get("role")),
+            "zenter": clean(r.get("start_date")),
+        })
+    seen = set(); uniq = []
+    for k in kom:
+        key = (k["name"], k["roll"])
+        if key not in seen:
+            seen.add(key); uniq.append(k)
+    data = json.load(open("docs/froen.json"))
+    data["kommissiounen"] = uniq
+    json.dump(data, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
+    print(len(uniq), "Kommissionen gefunden")
+except Exception as e:
+    print("Kommissionen nicht geladen:", e)
+
+# --- Sitzungstermine der Kommissionen (chd.lu Kalender .ics) ---
+# Weitere Kommissionen: Nummer aus dem Link "Réunions .ics" (…/icscalendar/NUMMER) hier eintragen.
+ICS_IDS = [755]
+try:
+    import datetime
+    jetzt = datetime.datetime.utcnow().strftime("%Y%m%dT%H%M")
+    sitz = []
+    for nr in ICS_IDS:
+        try:
+            req = urllib.request.Request("https://www.chd.lu/en/icscalendar/%d" % nr,
+                                         headers={"User-Agent": "Mozilla/5.0 (meris-sehovic.eu Webseit)"})
+            ics = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+        except Exception as e:
+            print("Kalender", nr, "nicht geladen:", e)
+            continue
+        ics = ics.replace("\r\n ", "").replace("\n ", "")  # Zeilenumbrüche (folding) auflösen
+        kal = ""
+        for z in ics.splitlines():
+            if z.startswith("X-WR-CALNAME"):
+                kal = z.split(":", 1)[1].strip()
+        for blk in ics.split("BEGIN:VEVENT")[1:]:
+            ev = {}
+            for z in blk.splitlines():
+                if ":" in z:
+                    k, v = z.split(":", 1)
+                    ev[k.split(";")[0]] = v.replace(r"\,", ",").replace(r"\n", " ").replace(r"\;", ";").strip()
+            start = ev.get("DTSTART", "")
+            if start[:8] < jetzt[:8]:
+                continue
+            sitz.append({
+                "kommissioun": kal or ev.get("SUMMARY", ""),
+                "titel": ev.get("SUMMARY", ""),
+                "start": start,
+                "uert": ev.get("LOCATION", ""),
+                "link": ev.get("URL", "https://www.chd.lu/en/commission/%d" % nr),
+            })
+    sitz.sort(key=lambda s: s["start"])
+    data = json.load(open("docs/froen.json"))
+    data["sitzungen"] = sitz[:8]
+    json.dump(data, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
+    print(len(sitz), "anstehende Sitzungen gefunden")
+except Exception as e:
+    print("Sitzungen nicht geladen:", e)
