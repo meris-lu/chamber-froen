@@ -171,3 +171,50 @@ try:
     print(len(sitz), "anstehende Sitzungen gefunden")
 except Exception as e:
     print("Sitzungen nicht geladen:", e)
+
+# --- Test: Abstimmungen im Plenum (nur Protokoll, noch nichts auf der Webseite) ---
+try:
+    rv = urllib.request.urlopen("https://download.data.public.lu/resources/liste-des-votes-en-seances-plenieres/20261018-033013/109-votes.csv", timeout=180).read()
+    try:
+        tv = rv.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        tv = rv.decode("cp1252")
+    dv = csv.Sniffer().sniff(tv[:5000], delimiters=",;\t")
+    rows = list(csv.DictReader(io.StringIO(tv), dialect=dv))
+    print("Abstimmungen Spalten:", list(rows[0].keys()) if rows else "-")
+    daten = sorted({clean(r.get("meeting_date")) for r in rows if clean(r.get("meeting_date"))})
+    meine = [r for r in rows if NAME in norm(" ".join(str(v) for v in r.values()))]
+    print("Abstimmungen gesamt:", len(rows), "| Zeitraum:", daten[:1], "bis", daten[-1:], "| davon Meris:", len(meine))
+    print("Letzte 3 von Meris:", [(clean(r.get("meeting_date")), (r.get("vote_name") or "")[:80], r.get("vote_result")) for r in sorted(meine, key=lambda r: clean(r.get("meeting_date")))[-3:]])
+except Exception as e:
+    print("Abstimmungen nicht geladen:", e)
+
+# --- Abstimmungen im Plenum für die Webseite ---
+# Begründungen ("Firwat") pflegt Meris in firwat.csv (Spalten: datum;titel_anfang;text).
+try:
+    from collections import Counter, defaultdict
+    total = defaultdict(Counter)
+    for r in rows:
+        k = (clean(r.get("meeting_date")), (r.get("vote_name") or "").strip())
+        total[k][(r.get("vote_result") or "").strip()] += 1
+    firwat = []
+    if os.path.exists("firwat.csv"):
+        for z in csv.reader(open("firwat.csv", encoding="utf-8-sig"), delimiter=";"):
+            if len(z) >= 3 and z[0].strip() and not z[0].startswith(("datum", "#")):
+                firwat.append((z[0].strip(), norm(z[1].strip()), z[2].strip()))
+    ab = []
+    for r in meine:
+        d = clean(r.get("meeting_date")); t = (r.get("vote_name") or "").strip()
+        c = total[(d, t)]
+        txt = next((f[2] for f in firwat if f[0] == d and f[1] and f[1] in norm(t)), "")
+        ab.append({"datum": d, "titel": t, "typ": clean(r.get("vote_type")),
+                   "votum": (r.get("vote_result") or "").strip(),
+                   "jo": c.get("Oui", 0), "nee": c.get("Non", 0), "enth": c.get("Abstention", 0),
+                   "firwat": txt})
+    ab.sort(key=lambda a: a["datum"], reverse=True)
+    data = json.load(open("docs/froen.json"))
+    data["abstimmungen"] = ab[:30]
+    json.dump(data, open("docs/froen.json", "w"), ensure_ascii=False, indent=1)
+    print(len(ab), "Abstimmungen von Meris gespeichert")
+except Exception as e:
+    print("Abstimmungen nicht gespeichert:", e)
