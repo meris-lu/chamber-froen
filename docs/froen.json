@@ -1370,37 +1370,9 @@
  "sitzungen": [
   {
    "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
-   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Bureau",
-   "start": "20261022T080000",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261026T083000",
    "uert": "Maison Printz et Richard - Salle 4 et 5",
-   "link": "https://www.chd.lu/en/commission/742"
-  },
-  {
-   "kommissioun": "Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme",
-   "titel": "- Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme",
-   "start": "20261022T083000",
-   "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/745"
-  },
-  {
-   "kommissioun": "Commission des Pétitions",
-   "titel": "- Commission des Pétitions",
-   "start": "20261022T083000",
-   "uert": "Maison Wiltheim - Salle 6",
-   "link": "https://www.chd.lu/en/commission/765"
-  },
-  {
-   "kommissioun": "Commission de la Mobilité et des Travaux publics",
-   "titel": "- Commission de la Mobilité et des Travaux publics",
-   "start": "20261022T101500",
-   "uert": "(Hybride) Maison Printz et Richard - Salle 4 et 5 + Webex",
-   "link": "https://www.chd.lu/en/commission/751"
-  },
-  {
-   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
-   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Commission \"Toutes les Commissions Parlementaires\"",
-   "start": "20261022T143000",
-   "uert": "Salle plénière à l'Hôtel de la Chambre",
    "link": "https://www.chd.lu/en/commission/742"
   },
   {
@@ -1418,11 +1390,39 @@
    "link": "https://www.chd.lu/en/commission/754"
   },
   {
+   "kommissioun": "Commission des Pétitions",
+   "titel": "- Commission des Pétitions",
+   "start": "20261111T090000",
+   "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/765"
+  },
+  {
    "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
    "titel": "- Commission de l'Environnement, du Climat et de la Biodiversité",
    "start": "20261111T113000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
    "link": "https://www.chd.lu/en/commission/755"
+  },
+  {
+   "kommissioun": "Commission du Logement et de l'Aménagement du territoire",
+   "titel": "- Commission du Logement et de l'Aménagement du territoire",
+   "start": "20261112T140000",
+   "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/750"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Bureau",
+   "start": "20261120T141500",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261123T083000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
   }
  ],
  "abstimmungen": [
