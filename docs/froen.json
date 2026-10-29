@@ -1370,10 +1370,17 @@
  "sitzungen": [
   {
    "kommissioun": "Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme",
-   "titel": "- Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme",
+   "titel": "- Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme - Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
    "start": "20261029T083000",
    "uert": "Maison Printz et Richard - Salle 4 et 5",
    "link": "https://www.chd.lu/en/commission/745"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission de l'Économie, des PME, de l'Énergie, de l'Espace et du Tourisme - Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261029T083000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
   },
   {
    "kommissioun": "Commission de la Mobilité et des Travaux publics",
@@ -1416,13 +1423,6 @@
    "start": "20261112T140000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
    "link": "https://www.chd.lu/en/commission/750"
-  },
-  {
-   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
-   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Bureau",
-   "start": "20261120T141500",
-   "uert": "Maison Printz et Richard - Salle 4 et 5",
-   "link": "https://www.chd.lu/en/commission/742"
   }
  ],
  "abstimmungen": [
