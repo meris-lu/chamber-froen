@@ -1369,13 +1369,6 @@
  ],
  "sitzungen": [
   {
-   "kommissioun": "Commission de la Mobilité et des Travaux publics",
-   "titel": "- Commission de l'Exécution budgétaire - Commission de la Mobilité et des Travaux publics",
-   "start": "20261109T140000",
-   "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/751"
-  },
-  {
    "kommissioun": "Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
    "titel": "- Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
    "start": "20261110T140000",
@@ -1421,6 +1414,13 @@
    "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
    "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Bureau",
    "start": "20261120T141500",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261123T083000",
    "uert": "Maison Printz et Richard - Salle 4 et 5",
    "link": "https://www.chd.lu/en/commission/742"
   }
