@@ -1369,20 +1369,6 @@
  ],
  "sitzungen": [
   {
-   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
-   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
-   "start": "20261123T080000",
-   "uert": "Maison Printz et Richard - Salle 4 et 5",
-   "link": "https://www.chd.lu/en/commission/742"
-  },
-  {
-   "kommissioun": "Commission de la Mobilité et des Travaux publics",
-   "titel": "- Commission de la Mobilité et des Travaux publics - Commission de la Défense - Commission des Affaires intérieures - Commission des Institutions",
-   "start": "20261123T093000",
-   "uert": "Salle plénière à l'Hôtel de la Chambre",
-   "link": "https://www.chd.lu/en/commission/751"
-  },
-  {
    "kommissioun": "Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
    "titel": "- Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
    "start": "20261124T140000",
@@ -1399,7 +1385,7 @@
   {
    "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
    "titel": "- Commission de l'Environnement, du Climat et de la Biodiversité",
-   "start": "20261125T103000",
+   "start": "20261125T113000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
    "link": "https://www.chd.lu/en/commission/755"
   },
@@ -1423,6 +1409,20 @@
    "start": "20261126T140000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
    "link": "https://www.chd.lu/en/commission/750"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission \"Toutes les Commissions Parlementaires\" - Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261126T150000",
+   "uert": "Salle plénière à l'Hôtel de la Chambre",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Commission des Affaires intérieures",
+   "start": "20261130T100000",
+   "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/742"
   }
  ],
  "abstimmungen": [
