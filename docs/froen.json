@@ -1369,13 +1369,6 @@
  ],
  "sitzungen": [
   {
-   "kommissioun": "Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
-   "titel": "- Commission de l'Enseignement supérieur, de la Recherche et de la Digitalisation",
-   "start": "20261124T140000",
-   "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/754"
-  },
-  {
    "kommissioun": "Commission des Pétitions",
    "titel": "- Commission des Pétitions",
    "start": "20261125T090000",
@@ -1422,6 +1415,13 @@
    "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Commission des Affaires intérieures",
    "start": "20261130T100000",
    "uert": "Maison Printz et Richard - Salle 1 et 2",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261214T083000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
    "link": "https://www.chd.lu/en/commission/742"
   }
  ],
