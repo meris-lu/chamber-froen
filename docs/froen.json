@@ -1369,20 +1369,6 @@
  ],
  "sitzungen": [
   {
-   "kommissioun": "Commission des Pétitions",
-   "titel": "- Commission des Pétitions",
-   "start": "20261125T090000",
-   "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/765"
-  },
-  {
-   "kommissioun": "Commission de l'Environnement, du Climat et de la Biodiversité",
-   "titel": "- Commission de l'Environnement, du Climat et de la Biodiversité",
-   "start": "20261125T113000",
-   "uert": "Maison Printz et Richard - Salle 1 et 2",
-   "link": "https://www.chd.lu/en/commission/755"
-  },
-  {
    "kommissioun": "Commission de la Mobilité et des Travaux publics",
    "titel": "- Commission de la Mobilité et des Travaux publics - Commission de l'Exécution budgétaire",
    "start": "20261126T101500",
@@ -1411,6 +1397,13 @@
    "link": "https://www.chd.lu/en/commission/742"
   },
   {
+   "kommissioun": "Commission des Pétitions",
+   "titel": "- Commission des Pétitions",
+   "start": "20261130T083000",
+   "uert": "Visioconférence",
+   "link": "https://www.chd.lu/en/commission/765"
+  },
+  {
    "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
    "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région - Commission des Affaires intérieures",
    "start": "20261130T100000",
@@ -1421,6 +1414,13 @@
    "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
    "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
    "start": "20261214T083000",
+   "uert": "Maison Printz et Richard - Salle 4 et 5",
+   "link": "https://www.chd.lu/en/commission/742"
+  },
+  {
+   "kommissioun": "Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "titel": "- Commission des Affaires étrangères et européennes, de la Coopération, du Commerce extérieur et à la Grande Région",
+   "start": "20261214T110000",
    "uert": "Maison Printz et Richard - Salle 4 et 5",
    "link": "https://www.chd.lu/en/commission/742"
   }
